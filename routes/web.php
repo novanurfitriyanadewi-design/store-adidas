@@ -4,6 +4,11 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 
+/* TAMBAHKAN INI */
+Route::get('/', function () {
+    return 'Laravel sudah jalan di Vercel';
+});
+
 Route::get('/', function () {
     return redirect()->route('login');
 });
